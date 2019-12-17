@@ -18,7 +18,6 @@ CREATE TABLE `items` (
 
 -   In cmd, enter **php artisan migrate** for the database
 -   Next, enter **php artisan serve** to run in localhost
--   In web browser, go to localhost:8000/clients
 
 ## API QUERY
 
