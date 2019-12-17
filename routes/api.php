@@ -13,32 +13,64 @@ use Illuminate\Http\Request;
 |
 */
 
+// /**
+//  * Show All Items
+// */
+// Route::get('items', 'ItemsController@showItems');
+
+// /**
+//  * Show Single Item
+// */
+// Route::get('item/{id}', 'ItemsController@showItem');
+
+// /**
+//  * Show Single Item By Name
+// */
+// Route::get('item/name/{name}', 'ItemsController@showItemByName');
+
+// /**
+//  * Insert Item
+// */
+// Route::post('item', 'ItemsController@insertItem');
+
+// /**
+//  * Delete Item
+// */
+// Route::delete('item/{id}', 'ItemsController@deleteItem');
+
+// /**
+//  * Update Item
+// */
+// Route::put('item', 'ItemsController@updateItem');
+
+
+
 /**
  * Show All Items
 */
-Route::get('items', 'ItemsController@showItems');
+Route::get('items', 'ItemsWithModelController@showItems');
 
 /**
  * Show Single Item
 */
-Route::get('item/{id}', 'ItemsController@showItem');
+Route::get('item/{id}', 'ItemsWithModelController@showItem');
 
 /**
  * Show Single Item By Name
 */
-Route::get('item/name/{name}', 'ItemsController@showItemByName');
+Route::get('item/name/{name}', 'ItemsWithModelController@showItemByName');
 
 /**
  * Insert Item
 */
-Route::post('item', 'ItemsController@insertItem');
+Route::post('item', 'ItemsWithModelController@insertItem');
 
 /**
  * Delete Item
 */
-Route::delete('item/{id}', 'ItemsController@deleteItem');
+Route::delete('item/{id}', 'ItemsWithModelController@deleteItem');
 
 /**
  * Update Item
 */
-Route::put('item', 'ItemsController@updateItem');
+Route::put('item', 'ItemsWithModelController@updateItem');

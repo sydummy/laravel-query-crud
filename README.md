@@ -9,16 +9,17 @@
 
 ```sql
 CREATE TABLE `items` (
-  `id` varchar(255) NOT NULL,
+  `id` varchar(255) NOT NULL PRIMARY,
   `name` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
-  `owner` varchar(255) NOT NULL
+  `owner` varchar(255) NOT NULL,
+  `updated_at` timestamp NULL,
+  `created_at` timestamp NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ```
 
 -   In cmd, enter **php artisan migrate** for the database
 -   Next, enter **php artisan serve** to run in localhost
--   In web browser, go to localhost:8000/clients
 
 ## API QUERY
 
@@ -29,7 +30,7 @@ CREATE TABLE `items` (
 | `Show Single Item By Name` | `GET`    | `http://localhost:8000/api/item/name/{name}` |                                                             |                  |
 | `Insert New Item`          | `POST`   | `http://localhost:8000/api/item`             | `Acceptapplication/json`<br> `Content-Typeapplication/json` | `See Body Below` |
 | `Update Item`              | `PUT`    | `http://localhost:8000/api/item`             | `Acceptapplication/json`<br> `Content-Typeapplication/json` | `See Body Below` |
-| `Delete Item`              | `DELETE` | `http://localhost:8000/api/item/{id}`        |                                                             |                  |
+| `Delete Item`              | `DELETE` | `http://localhost:8000/api/item/{id}`        | `Acceptapplication/json`<br> `Content-Typeapplication/json` |                  |
 
 ## Insert New Item Body
 
