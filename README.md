@@ -9,7 +9,7 @@
 
 ```sql
 CREATE TABLE `items` (
-  `id` varchar(255) NOT NULL PRIMARY,
+  `id` varchar(255) NOT NULL PRIMARY KEY,
   `name` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `owner` varchar(255) NOT NULL,
