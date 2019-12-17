@@ -6,6 +6,16 @@
 -   Generate app key by running **php artisan key:generate**
 -   Create database name "laravel_query_crud" in your localhost PHPMyAdmin
 -   Create table name "items"
+
+```sql
+CREATE TABLE `items` (
+  `id` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `owner` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
+
 -   In cmd, enter **php artisan migrate** for the database
 -   Next, enter **php artisan serve** to run in localhost
 -   In web browser, go to localhost:8000/clients
